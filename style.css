@@ -45,7 +45,7 @@
 }
 
 #terminal-wrapper .terminal-topbar {
-    font-family: "Courier new", "Courier", monospace;
+    font-family: "Courier Prime", "Courier new", "Courier", monospace;
     background: #E0E8F0;
     height: 30px;
     border-radius: 8px 8px 0 0;
@@ -79,7 +79,7 @@
 
 #terminal-wrapper #terminal-container {
     background: #30353A;
-    font-family: "Courier new", "Courier", monospace;
+    font-family: "Courier Prime", "Courier new", "Courier", monospace;
     text-align: left;
     padding: 10px;
     height: 360px;
@@ -88,7 +88,7 @@
 }
 
 #terminal-wrapper #terminal-container {
-    font-family: "Courier new", "Courier", monospace;
+    font-family: "Courier Prime", "Courier new", "Courier", monospace;
     font-size: 14px;
     letter-spacing: 1px;
 }
@@ -116,7 +116,7 @@
 }
 
 #terminal-wrapper #terminal-container input.terminal-input {
-    font-family: "Courier new", "Courier", monospace;
+    font-family: "Courier Prime", "Courier new", "Courier", monospace;
     padding: 0 5px;
     border: none;
     outline: none;
