@@ -1,29 +1,30 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link type="text/css" rel="stylesheet" href="./style.css">
-    </head>
-    <body>
-        <div id="terminal-wrapper">
-            <div class="terminal-topbar">
-              <span class="button allphi"></span>
-              <span class="button allphi"></span>
-              <span class="button allphi"></span>
-            </div>
-            <div id="terminal-container">
-                <div class="session">
-                    <h1>Welcome to AllPhi</h1>
-                    &phi; an AllPhi-terminal in the browser, just for fun!<br>
-                    &phi;<br>
-                    &phi; Type 'help' for list of commands<br>
-                    &phi; Type 'man &laquo;command&raquo;' for extra info<br>
-                    <!--&phi; source: <a href="https://github.com/Kirkhammetz/termly.js" style="color:white !important; text-decoration: underline;">View on Github</a><br>-->
-                    &phi;
-                  </div>
+
+<head>
+    <link type="text/css" rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div id="terminal-wrapper">
+        <div class="terminal-topbar">
+            <span class="button allphi"></span>
+            <span class="button allphi"></span>
+            <span class="button allphi"></span>
+        </div>
+        <div id="terminal-container">
+            <div class="session">
+                <h1>Welcome to <strong class="allphi-text--blue font-large">&phi;</strong> AllPhi</h1>
+                &phi; an AllPhi-terminal in the browser, just for fun!<br> &phi;
+                <br> &phi; Type 'help' for list of commands<br> &phi; Type 'man &laquo;command&raquo;' for extra info<br>
+                <!--&phi; source: <a href="https://github.com/Kirkhammetz/termly.js" style="color:white !important; text-decoration: underline;">View on Github</a><br>-->
+                &phi;
             </div>
         </div>
+    </div>
 
-        <script src="./node_modules/termly.js/dist/termly-prompt.min.js"></script>
-        <script src="./index.js"></script>
-    </body>
+    <script src="./node_modules/termly.js/dist/termly-prompt.min.js"></script>
+    <script src="./index.js"></script>
+</body>
+
 </html>
