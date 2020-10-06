@@ -2,11 +2,14 @@
 
 ## Goal of the project
 
-The goal of this project is to keep in touch with web development. This is an exercise, not a real project.
+The goal of this project is to keep in touch with web development. This is an exercise for fun, not a real project.
 
 ## Resources
 
 - the editor: [VSCode](https://code.visualstudio.com/)
+  - the color theme: [Night Owl Light (No Italics)](https://marketplace.visualstudio.com/items?itemName=sdras.night-owl)
+  - the file icon theme: [VSCode Great Icons](https://marketplace.visualstudio.com/items?itemName=emmanuelbeziat.vscode-great-icons)
 - the library: [Termly.js](https://kirkhammetz.github.io/termly.js/#/)
 - the httpserver with live reload: [Live Server](https://github.com/tapio/live-server#readme)
 - the company: [AllPhi](https://www.allphi.eu/)
+- the developer: [Ruben Verheyen](https://www.linkedin.com/in/ruben-verheyen-075808124/)
