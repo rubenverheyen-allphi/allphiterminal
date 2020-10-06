@@ -143,6 +143,8 @@ section.cover .cover-main p:last-child a:last-child {
         background: #2ecc71; }
       #terminal-wrapper .terminal-topbar .button.yellow {
         background: #f39c12; }
+      #terminal-wrapper .terminal-topbar .button.allphi {
+         background: #2296d3; }
   #terminal-wrapper #terminal-container {
     background: #30353A;
     font-family: "Courier new", "Courier", monospace;
@@ -152,6 +154,7 @@ section.cover .cover-main p:last-child a:last-child {
     overflow-x: hidden;
     overflow-y: scroll; }
     #terminal-wrapper #terminal-container * {
+      font-family: "Courier new", "Courier", monospace;
       font-size: 14px;
       letter-spacing: 1px; }
       @media screen and (max-width: 500px) {
@@ -164,6 +167,7 @@ section.cover .cover-main p:last-child a:last-child {
       font-size: 16px;
       letter-spacing: 3px; }
     #terminal-wrapper #terminal-container input.terminal-input {
+      font-family: "Courier new", "Courier", monospace;
       padding: 0 5px;
       border: none;
       outline: none;
