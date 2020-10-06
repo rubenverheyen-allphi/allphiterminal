@@ -1,14 +1,16 @@
 let allphiCommands = [
-    { name: 'ceo', man: 'Who leads the company?', fn: function(ARGV) { return 'Roel Vaneerdewegh' } },
-    { name: 'whois', man: 'What is the defenition of AllPhi?', fn: function(ARGV) { return '"AllPhi is een onafhankelijk consultancy bedrijf gespecialiseerd in software ontwikkeling met een duidelijke focus op technologie (Microsoft .NET)."' } },
-    { name: 'mission', man: 'Outputs the mission statement of AllPhi', fn: function(ARGV) { return '\"AllPhi enables the next generation software developers who will change and build the world of tomorrow in which we live, love and work.\"' } },
-    { name: 'logo', man: 'Displays the logo in ascii art', fn: function() { return logo(); } }
+    { name: 'ceo', fn: function(ARGV) { return 'Roel Vaneerdewegh' } },
+    { name: 'whois', fn: function(ARGV) { return '"AllPhi is een onafhankelijk consultancy bedrijf gespecialiseerd in software ontwikkeling met een duidelijke focus op technologie (Microsoft .NET)."' } },
+    { name: 'mission', fn: function(ARGV) { return '\"AllPhi enables the next generation software developers who will change and build the world of tomorrow in which we live, love and work.\"' } },
+    { name: 'logo', fn: function() { return logo(); } },
+    { name: 'offices', fn: function() {return 'Westerlo & Merelbeke'}},
+    { name: 'bugs', fn: () => '🐛 🐜 🦗 🦟'}
 ];
 
 var customCommands = {
     allphi: {
         name: 'allphi',
-        man: 'todo: manual for AllPhi',
+        man: man(),
         fn: function allphi(ARGV) {
             if (!ARGV || !ARGV['_'].length) {
                 return this.man;
@@ -30,6 +32,22 @@ var myShell = new TermlyPrompt('#terminal-container', { env: { USER: 'dev ', HOS
 customCommands.help = myShell.ShellCommands.help;
 customCommands.man = myShell.ShellCommands.man;
 myShell.ShellCommands = myShell.registerCommands(myShell, customCommands);
+
+function man() {
+    let returnValue = 'Usage: allphi <command>\n\n';
+    returnValue += 'where <command> is one of:\n    '
+    allphiCommands.sort(function(a, b){
+        if (a.name > b.name) {
+          return 1;
+        } else if (a.name < b.name) {
+          return -1;
+        }
+        return 0;
+    }).forEach(function(el) {
+        returnValue += `${el.name}, `;
+    });
+    return returnValue.substring(0, returnValue.length-2);
+}
 
 function logo() {
     return `@@@@@@@@@@@@@@@@@@@@@@(((((//@@@@@@@@@@@@@@@@@@@@@

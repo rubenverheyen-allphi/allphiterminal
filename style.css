@@ -132,3 +132,15 @@
 .allphi-text--blue {
     color: #2296d3;
 }
+
+.footer {
+    font-family: "Piazzolla";
+    position: fixed;
+    bottom: 0;
+  }
+
+.footer a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #000000;
+}
